@@ -6,7 +6,6 @@ interface DataProviderInterface
 {
     /**
      * @param array $input
-     *
      * @return array
      */
     public function get(array $input): array;

@@ -4,7 +4,9 @@ namespace App\classes\dataProviders;
 
 use App\interfaces\DataProviderInterface;
 
-
+/**
+ * Поставщик данных из стороннего сервиса
+ */
 class OutServiceDataProvider implements DataProviderInterface
 {
     private $host;
@@ -24,12 +26,13 @@ class OutServiceDataProvider implements DataProviderInterface
     }
 
     /**
-     * @param array $input
+     * Получить данные из стороннего сервиса.
      *
-     * @return array
+     * @param array $input
+     * @return array|string[]
      */
     public function get(array $input): array
     {
-        return rand(0,1)?[]:['data from Out'];// returns a response from external service
+        // returns a response from external service
     }
 }
